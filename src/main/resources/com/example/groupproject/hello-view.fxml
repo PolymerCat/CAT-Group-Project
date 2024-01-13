@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.groupproject.HelloController">
+<VBox alignment="CENTER" prefHeight="720.0" prefWidth="1280.0" spacing="20.0" style="-fx-background-color: #0D1117;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="com.example.groupproject.HelloController">
     <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
+   <VBox fillWidth="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="200.0" prefWidth="150.0" style="-fx-border-color: #1CAAB4; -fx-border-radius: 10;">
+      <children>
+         <Button alignment="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #1CAAB4;" text="Check Report Details" translateY="130.0" />
+         <Button mnemonicParsing="false" prefWidth="65.0" style="-fx-background-color: #FA5B5B;" text="Decline" translateX="5.0" translateY="135.0" />
+         <Button layoutX="11.0" layoutY="36.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" style="-fx-background-color: #1CDA7F;" text="Accept" translateX="80.0" translateY="110.0" />
+      </children>
+   </VBox>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+    <Label fx:id="welcomeText" text="Watch me COOK!" textFill="#1caab4" />
+    <Button onAction="#onHelloButtonClick" style="-fx-background-color: #111823; -fx-border-color: #1CAAB4;" text="Hello!" textFill="WHITE" />
 </VBox>
