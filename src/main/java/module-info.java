@@ -3,6 +3,7 @@ module com.example.groupproject {
     requires javafx.fxml;
 
 
+
     opens com.example.groupproject to javafx.fxml;
     exports com.example.groupproject;
 }

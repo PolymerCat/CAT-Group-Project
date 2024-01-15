@@ -16,16 +16,24 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #0D1117;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #0D1117;" stylesheets="@Page1.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.groupproject.Page1Controller">
    <children>
       <Pane layoutX="787.0" layoutY="148.0" prefHeight="270.0" prefWidth="463.0" style="-fx-background-color: #111823;">
          <children>
-            <VBox prefHeight="278.0" prefWidth="463.0">
+            <VBox layoutY="-4.0" prefHeight="278.0" prefWidth="463.0">
                <children>
                   <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Medical Leave Issued (this month)" textAlignment="CENTER" wrappingWidth="462.13671875">
                      <font>
                         <Font size="18.0" />
                      </font>
+                  </Text>
+                  <Text fill="#1caab4" strokeType="OUTSIDE" strokeWidth="0.0" text="4" textAlignment="CENTER" wrappingWidth="462.5">
+                     <font>
+                        <Font size="64.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="60.0" />
+                     </VBox.margin>
                   </Text>
                </children>
                <padding>
@@ -37,7 +45,7 @@
          <children>
             <ImageView fitHeight="99.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../media/Cheese.png" />
+                  <Image url="@../../../media/Cheese.png" />
                </image>
             </ImageView>
             <VBox prefHeight="0.0" prefWidth="113.0">
@@ -79,7 +87,7 @@
       </HBox>
       <VBox prefHeight="720.0" prefWidth="168.0" spacing="50.0" style="-fx-background-color: #111823;">
          <children>
-            <Button alignment="TOP_CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="173.0" style="-fx-background-color: #111823;" text="Dashboard" textFill="#1caab4">
+            <Button fx:id="testText" alignment="TOP_CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="173.0" style="-fx-background-color: #111823;" styleClass="glow-button" text="Dashboard" textFill="#1caab4">
                <font>
                   <Font size="14.0" />
                </font>
@@ -87,12 +95,12 @@
                   <Glow />
                </effect>
             </Button>
-            <Button alignment="TOP_CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="173.0" style="-fx-background-color: #111823;" text="Health Report" textFill="WHITE">
+            <Button alignment="TOP_CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="173.0" style="-fx-background-color: #111823;" styleClass="glow-button" text="Health Report" textFill="WHITE">
                <font>
                   <Font size="14.0" />
                </font>
             </Button>
-            <Button alignment="TOP_CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="178.0" style="-fx-background-color: #111823;" text="Account Settings" textFill="WHITE">
+            <Button alignment="TOP_CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="178.0" style="-fx-background-color: #111823;" styleClass="glow-button" text="Account Settings" textFill="WHITE">
                <font>
                   <Font size="14.0" />
                </font>
@@ -114,6 +122,7 @@
               <yAxis>
                 <NumberAxis side="LEFT" />
               </yAxis>
+
             </LineChart>
          </children>
       </Pane>
@@ -125,126 +134,30 @@
                      <children>
                         <VBox prefHeight="232.0" prefWidth="200.0" style="-fx-background-color: #111823; -fx-border-radius: 10; -fx-border-color: #1CAAB4;">
                            <children>
-                              <Text fill="#e7eb1f" strokeType="OUTSIDE" strokeWidth="0.0" text="Requested" textAlignment="CENTER" wrappingWidth="196.0859375">
+                              <Text fx:id="requestText" fill="#e7eb1f" strokeType="OUTSIDE" strokeWidth="0.0" text="Requested" textAlignment="CENTER" wrappingWidth="196.0859375">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Text>
                               <ImageView fitHeight="130.0" fitWidth="179.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../../../../../media/Cheese.png" />
-                                 </image>
                                  <VBox.margin>
                                     <Insets left="30.0" />
                                  </VBox.margin>
-                              </ImageView>
-                              <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="231.0" style="-fx-background-color: #1CAAB4;" text="Read Report">
-                                 <VBox.margin>
-                                    <Insets top="8.0" />
-                                 </VBox.margin>
-                              </Button>
-                              <Button layoutX="10.0" layoutY="140.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="225.0" style="-fx-background-color: #1CDA7F;" text="Accept">
-                                 <VBox.margin>
-                                    <Insets top="8.0" />
-                                 </VBox.margin>
-                              </Button>
-                              <Button layoutX="10.0" layoutY="140.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="230.0" style="-fx-background-color: #FA5B5B;" text="Decline">
-                                 <VBox.margin>
-                                    <Insets top="8.0" />
-                                 </VBox.margin>
-                              </Button>
-                           </children>
-                        </VBox>
-                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="232.0" prefWidth="200.0" style="-fx-background-color: #111823; -fx-border-radius: 10; -fx-border-color: #1CAAB4;">
-                           <children>
-                              <Text fill="#e7eb1f" strokeType="OUTSIDE" strokeWidth="0.0" text="Requested" textAlignment="CENTER" wrappingWidth="196.0859375">
-                                 <font>
-                                    <Font size="14.0" />
-                                 </font>
-                              </Text>
-                              <ImageView fitHeight="130.0" fitWidth="179.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../../../media/Cheese.png" />
+                                    <Image url="@../../../media/Cheese.png" />
                                  </image>
-                                 <VBox.margin>
-                                    <Insets left="30.0" />
-                                 </VBox.margin>
                               </ImageView>
-                              <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="231.0" style="-fx-background-color: #1CAAB4;" text="Read Report">
+                              <Button mnemonicParsing="false" onAction="#onSwitchSceneButtonClick" prefHeight="25.0" prefWidth="231.0" styleClass="hover-read-report" text="Read Report">
                                  <VBox.margin>
                                     <Insets top="8.0" />
                                  </VBox.margin>
                               </Button>
-                              <Button layoutX="10.0" layoutY="140.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="225.0" style="-fx-background-color: #1CDA7F;" text="Accept">
+                              <Button fx:id="acceptButton" layoutX="10.0" layoutY="140.0" mnemonicParsing="false" onAction="#onAccept" prefHeight="25.0" prefWidth="225.0" styleClass="hover-accept" text="Accept">
                                  <VBox.margin>
                                     <Insets top="8.0" />
                                  </VBox.margin>
                               </Button>
-                              <Button layoutX="10.0" layoutY="140.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="230.0" style="-fx-background-color: #FA5B5B;" text="Decline">
-                                 <VBox.margin>
-                                    <Insets top="8.0" />
-                                 </VBox.margin>
-                              </Button>
-                           </children>
-                        </VBox>
-                        <VBox layoutX="220.0" layoutY="10.0" prefHeight="232.0" prefWidth="200.0" style="-fx-background-color: #111823; -fx-border-radius: 10; -fx-border-color: #1CAAB4;">
-                           <children>
-                              <Text fill="#e7eb1f" strokeType="OUTSIDE" strokeWidth="0.0" text="Requested" textAlignment="CENTER" wrappingWidth="196.0859375">
-                                 <font>
-                                    <Font size="14.0" />
-                                 </font>
-                              </Text>
-                              <ImageView fitHeight="130.0" fitWidth="179.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../../../../../media/Cheese.png" />
-                                 </image>
-                                 <VBox.margin>
-                                    <Insets left="30.0" />
-                                 </VBox.margin>
-                              </ImageView>
-                              <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="231.0" style="-fx-background-color: #1CAAB4;" text="Read Report">
-                                 <VBox.margin>
-                                    <Insets top="8.0" />
-                                 </VBox.margin>
-                              </Button>
-                              <Button layoutX="10.0" layoutY="140.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="225.0" style="-fx-background-color: #1CDA7F;" text="Accept">
-                                 <VBox.margin>
-                                    <Insets top="8.0" />
-                                 </VBox.margin>
-                              </Button>
-                              <Button layoutX="10.0" layoutY="140.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="230.0" style="-fx-background-color: #FA5B5B;" text="Decline">
-                                 <VBox.margin>
-                                    <Insets top="8.0" />
-                                 </VBox.margin>
-                              </Button>
-                           </children>
-                        </VBox>
-                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="232.0" prefWidth="200.0" style="-fx-background-color: #111823; -fx-border-radius: 10; -fx-border-color: #1CAAB4;">
-                           <children>
-                              <Text fill="#e7eb1f" strokeType="OUTSIDE" strokeWidth="0.0" text="Requested" textAlignment="CENTER" wrappingWidth="196.0859375">
-                                 <font>
-                                    <Font size="14.0" />
-                                 </font>
-                              </Text>
-                              <ImageView fitHeight="130.0" fitWidth="179.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../../../../../media/Cheese.png" />
-                                 </image>
-                                 <VBox.margin>
-                                    <Insets left="30.0" />
-                                 </VBox.margin>
-                              </ImageView>
-                              <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="231.0" style="-fx-background-color: #1CAAB4;" text="Read Report">
-                                 <VBox.margin>
-                                    <Insets top="8.0" />
-                                 </VBox.margin>
-                              </Button>
-                              <Button layoutX="10.0" layoutY="140.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="225.0" style="-fx-background-color: #1CDA7F;" text="Accept">
-                                 <VBox.margin>
-                                    <Insets top="8.0" />
-                                 </VBox.margin>
-                              </Button>
-                              <Button layoutX="10.0" layoutY="140.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="230.0" style="-fx-background-color: #FA5B5B;" text="Decline">
+                              <Button fx:id="declineButton" layoutX="10.0" layoutY="140.0" mnemonicParsing="false" onAction="#onDecline" prefHeight="25.0" prefWidth="230.0" styleClass="hover-decline" text="Decline">
                                  <VBox.margin>
                                     <Insets top="8.0" />
                                  </VBox.margin>
@@ -260,23 +173,119 @@
                               </Text>
                               <ImageView fitHeight="130.0" fitWidth="179.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../../../media/Cheese.png" />
+                                    <Image url="@../../../media/Cheese.png" />
                                  </image>
                                  <VBox.margin>
                                     <Insets left="30.0" />
                                  </VBox.margin>
                               </ImageView>
-                              <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="231.0" style="-fx-background-color: #1CAAB4;" text="Read Report">
+                              <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="231.0" styleClass="hover-read-report" text="Read Report">
                                  <VBox.margin>
                                     <Insets top="8.0" />
                                  </VBox.margin>
                               </Button>
-                              <Button layoutX="10.0" layoutY="140.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="225.0" style="-fx-background-color: #1CDA7F;" text="Accept">
+                              <Button layoutX="10.0" layoutY="140.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="225.0" styleClass="hover-accept" text="Accept">
                                  <VBox.margin>
                                     <Insets top="8.0" />
                                  </VBox.margin>
                               </Button>
-                              <Button layoutX="10.0" layoutY="140.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="230.0" style="-fx-background-color: #FA5B5B;" text="Decline">
+                              <Button layoutX="10.0" layoutY="140.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="230.0" styleClass="hover-decline" text="Decline">
+                                 <VBox.margin>
+                                    <Insets top="8.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="220.0" layoutY="10.0" prefHeight="232.0" prefWidth="200.0" style="-fx-background-color: #111823; -fx-border-radius: 10; -fx-border-color: #1CAAB4;">
+                           <children>
+                              <Text fill="#e7eb1f" strokeType="OUTSIDE" strokeWidth="0.0" text="Requested" textAlignment="CENTER" wrappingWidth="196.0859375">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="130.0" fitWidth="179.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../media/Cheese.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets left="30.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="231.0" styleClass="hover-read-report" text="Read Report">
+                                 <VBox.margin>
+                                    <Insets top="8.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button layoutX="10.0" layoutY="140.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="225.0" styleClass="hover-accept" text="Accept">
+                                 <VBox.margin>
+                                    <Insets top="8.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button layoutX="10.0" layoutY="140.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="230.0" styleClass="hover-decline" text="Decline">
+                                 <VBox.margin>
+                                    <Insets top="8.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="430.0" layoutY="10.0" prefHeight="232.0" prefWidth="200.0" style="-fx-background-color: #111823; -fx-border-radius: 10; -fx-border-color: #1CAAB4;">
+                           <children>
+                              <Text fill="#e7eb1f" strokeType="OUTSIDE" strokeWidth="0.0" text="Requested" textAlignment="CENTER" wrappingWidth="196.0859375">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="130.0" fitWidth="179.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../media/Cheese.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets left="30.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="231.0" styleClass="hover-read-report" text="Read Report">
+                                 <VBox.margin>
+                                    <Insets top="8.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button layoutX="10.0" layoutY="140.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="225.0" styleClass="hover-accept" text="Accept">
+                                 <VBox.margin>
+                                    <Insets top="8.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button layoutX="10.0" layoutY="140.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="230.0" styleClass="hover-decline" text="Decline">
+                                 <VBox.margin>
+                                    <Insets top="8.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="640.0" layoutY="10.0" prefHeight="232.0" prefWidth="200.0" style="-fx-background-color: #111823; -fx-border-radius: 10; -fx-border-color: #1CAAB4;">
+                           <children>
+                              <Text fill="#e7eb1f" strokeType="OUTSIDE" strokeWidth="0.0" text="Requested" textAlignment="CENTER" wrappingWidth="196.0859375">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="130.0" fitWidth="179.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../media/Cheese.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets left="30.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="231.0" styleClass="hover-read-report" text="Read Report">
+                                 <VBox.margin>
+                                    <Insets top="8.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button layoutX="10.0" layoutY="140.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="225.0" styleClass="hover-accept" text="Accept">
+                                 <VBox.margin>
+                                    <Insets top="8.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button layoutX="10.0" layoutY="140.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="230.0" styleClass="hover-decline" text="Decline">
                                  <VBox.margin>
                                     <Insets top="8.0" />
                                  </VBox.margin>
