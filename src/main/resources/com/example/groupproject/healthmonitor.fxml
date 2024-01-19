@@ -3,22 +3,22 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.effect.Blend?>
 <?import javafx.scene.effect.ColorAdjust?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="801.0" style="-fx-background-color: #0D1117;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Pane layoutX="121.0" layoutY="23.0" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #111823; -fx-background-radius: 10;">
+      <Pane layoutX="158.0" layoutY="23.0" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #111823; -fx-background-radius: 10;">
          <children>
             <Text fill="WHITE" layoutX="68.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="username " />
-            <Text fill="WHITE" layoutX="68.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #1CAAB4;" text="admin" wrappingWidth="63.75651168823242">
+            <Text fill="WHITE" layoutX="68.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #1CAAB4;" text="employee" wrappingWidth="63.75651168823242">
                <effect>
                   <Blend />
                </effect>
@@ -30,17 +30,9 @@
             </ImageView>
          </children>
       </Pane>
-      <Pane layoutX="384.0" layoutY="23.0" prefHeight="60.0" prefWidth="400.0" style="-fx-background-color: #111823; -fx-background-radius: 10;">
+      <Pane layoutX="384.0" layoutY="23.0" prefHeight="60.0" prefWidth="378.0" style="-fx-background-color: #111823; -fx-background-radius: 10;">
          <children>
-            <DatePicker blendMode="SCREEN" layoutX="25.0" layoutY="18.0" prefHeight="26.0" prefWidth="233.0" promptText="Select Date" showWeekNumbers="true" style="-fx-background-radius: 10;">
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-               <opaqueInsets>
-                  <Insets />
-               </opaqueInsets>
-            </DatePicker>
-            <ImageView accessibleRole="BUTTON" fitHeight="44.0" fitWidth="36.0" layoutX="342.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: 3rr;">
+            <ImageView accessibleRole="BUTTON" fitHeight="44.0" fitWidth="36.0" layoutX="328.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: 3rr;">
                <image>
                   <Image url="@../../../../../../../../../../../Downloads/logoutttt.png" />
                </image>
@@ -48,40 +40,20 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </ImageView>
+            <Text fill="WHITE" layoutX="14.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #1CAAB4;" text="Day" wrappingWidth="63.75651168823242">
+               <effect>
+                  <Blend />
+               </effect>
+            </Text>
+            <Text fill="WHITE" layoutX="14.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #1CAAB4;" text="Month" wrappingWidth="63.75651168823242">
+               <effect>
+                  <Blend />
+               </effect>
+            </Text>
          </children></Pane>
-      <Pane layoutX="121.0" layoutY="112.0" prefHeight="106.0" prefWidth="200.0" style="-fx-background-color: #443949; -fx-background-radius: 10;">
+      <Pane layoutX="158.0" layoutY="109.0" prefHeight="402.0" prefWidth="604.0" style="-fx-background-color: #111823; -fx-background-radius: 10;">
          <children>
-            <Button layoutX="22.0" layoutY="38.0" mnemonicParsing="false" style="-fx-background-color: #1CAAB4; -fx-background-radius: 10;" text="Employee Health Status" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font size="10.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-               <effect>
-                  <ColorAdjust brightness="0.6" />
-               </effect>
-            </Button>
-         </children>
-      </Pane>
-      <Pane layoutX="355.0" layoutY="112.0" prefHeight="106.0" prefWidth="200.0" style="-fx-background-color: #443949; -fx-background-radius: 10;">
-         <children>
-            <Button contentDisplay="TEXT_ONLY" layoutX="20.0" layoutY="38.0" mnemonicParsing="false" style="-fx-background-color: #1CAAB4; -fx-background-radius: 10;" text="Active employee number" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font size="10.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-               <effect>
-                  <ColorAdjust brightness="0.69" />
-               </effect>
-            </Button>
-         </children>
-      </Pane>
-      <Pane layoutX="600.0" layoutY="112.0" prefHeight="175.0" prefWidth="183.0" style="-fx-background-color: #111823; -fx-background-radius: 10;">
-         <children>
-            <Button layoutX="22.0" layoutY="110.0" mnemonicParsing="false" style="-fx-background-color: #1CAAB4; -fx-background-radius: 10;" text="Update Health Status" textAlignment="CENTER" textFill="WHITE">
+            <Button layoutX="208.0" layoutY="171.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="188.0" style="-fx-background-color: #1CAAB4; -fx-background-radius: 10;" text="Update Health Status" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="10.0" />
                </font>
@@ -93,7 +65,45 @@
                </effect>
             </Button>
          </children></Pane>
-      <Pane layoutX="121.0" layoutY="308.0" prefHeight="203.0" prefWidth="663.0" style="-fx-background-color: #3A3B3C; -fx-background-radius: 10;" />
-      <Pane layoutY="4.0" prefHeight="537.0" prefWidth="83.0" style="-fx-background-color: #111823;" />
+      <Pane layoutY="4.0" prefHeight="538.0" prefWidth="121.0" style="-fx-background-color: #111823;">
+         <children>
+            <VBox depthTest="ENABLE" layoutX="1.0" layoutY="169.0" prefHeight="200.0" prefWidth="122.0">
+               <children>
+                  <Button contentDisplay="TEXT_ONLY" mnemonicParsing="false" prefHeight="30.0" prefWidth="126.0" style="-fx-background-color: #111823;" text="Dashboard">
+                     <opaqueInsets>
+                        <Insets top="10.0" />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="20.0" left="23.0" top="20.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="23.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="123.0" style="-fx-background-color: #111823;" text="Health Report">
+                     <opaqueInsets>
+                        <Insets top="10.0" />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="20.0" top="20.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="23.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="125.0" style="-fx-background-color: #111823;" text="Account Settings">
+                     <opaqueInsets>
+                        <Insets top="10.0" />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="20.0" top="20.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="23.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children></Pane>
    </children>
 </AnchorPane>
