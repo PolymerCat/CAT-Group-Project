@@ -26,7 +26,7 @@ public class Page1Controller {
     @FXML
     protected void onSwitchSceneButtonClick() {
         if (sceneManager != null) {
-            sceneManager.showPage("hello-view.fxml", "New Page");
+            sceneManager.showPage("Login.fxml", "New Page");
         }
     }
     @FXML
