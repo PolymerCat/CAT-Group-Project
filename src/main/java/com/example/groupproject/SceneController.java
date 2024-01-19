@@ -9,6 +9,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
@@ -33,7 +34,7 @@ public class SceneController implements Initializable {
     private AnchorPane Slider;
 
     @FXML
-    private Text Exit;
+    private Button Exit;
 
 
     public void switchToSettingExit(ActionEvent event) throws IOException {
@@ -60,7 +61,7 @@ public class SceneController implements Initializable {
             System.exit(0);
         });
 
-        Slider.setTranslateX(-200);
+        Slider.setTranslateX(-284);
 
         Setting.setOnMouseClicked(Event -> {
             TranslateTransition slide = new TranslateTransition();
@@ -70,8 +71,8 @@ public class SceneController implements Initializable {
             slide.setToX(0);
             slide.play();
 
-            Slider.setTranslateX(-200);
-            
+            Slider.setTranslateX(-284);
+
             slide.setOnFinished((ActionEvent e)-> {
                 Setting.setVisible(false);
                 SettingBack.setVisible(true);
@@ -83,7 +84,7 @@ public class SceneController implements Initializable {
             slide.setDuration(Duration.seconds(0.4));
             slide.setNode(Slider);
 
-            slide.setToX(-200);
+            slide.setToX(-284);
             slide.play();
 
             Slider.setTranslateX(0);
@@ -93,5 +94,6 @@ public class SceneController implements Initializable {
                 SettingBack.setVisible(false);
             });
         });
+
     }
 }

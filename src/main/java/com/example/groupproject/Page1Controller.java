@@ -1,10 +1,14 @@
 package com.example.groupproject;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
+import javafx.stage.Stage;
 
 import java.util.ResourceBundle;
 
@@ -17,6 +21,8 @@ public class Page1Controller {
     private Button declineButton;
     @FXML
     private Text requestText;
+    @FXML
+    private Button GoToSettingPage;
     private SceneManager sceneManager;
 
     public void setSceneManager(SceneManager sceneManager) {
@@ -44,5 +50,11 @@ public class Page1Controller {
     @FXML
     protected void onHelloButtonClick() {
         testText.setText("Welcome to JavaFX Application!");
+    }
+
+    public void switchToSettingPage() throws Exception {
+        Parent root = FXMLLoader.load(getClass().getResource("SettingPage2.fxml"));
+        Stage window = (Stage) GoToSettingPage.getScene().getWindow();
+        window.setScene(new Scene(root));
     }
 }

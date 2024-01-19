@@ -100,7 +100,7 @@
                   <Font size="14.0" />
                </font>
             </Button>
-            <Button alignment="TOP_CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="178.0" style="-fx-background-color: #111823;" styleClass="glow-button" text="Account Settings" textFill="WHITE">
+            <Button fx:id="GoToSettingPage" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#switchToSettingPage" prefHeight="30.0" prefWidth="178.0" style="-fx-background-color: #111823;" styleClass="glow-button" text="Account Settings" textFill="WHITE">
                <font>
                   <Font size="14.0" />
                </font>
