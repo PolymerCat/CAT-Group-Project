@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbb3fdcb-54c2-4310-b0af-c6c1a0d3a92a" name="Changes" comment="test">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/groupproject/SceneController2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/groupproject/SettingPage1.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/groupproject/SettingPage2.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/groupproject/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/groupproject/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/groupproject/Page1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/groupproject/Page1Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/groupproject/SceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/groupproject/SceneController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/groupproject/Page1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/groupproject/Page1.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/groupproject/SceneController2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/groupproject/SceneController2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/groupproject/Page1.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/groupproject/Page1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/groupproject/SettingPage2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/groupproject/SettingPage2.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +20,7 @@
       <list>
         <option value="Class" />
         <option value="FxmlFile" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -41,22 +38,27 @@
         </map>
       </branch-storage>
     </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "history": [
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
     {
-      "state": "OPEN",
-      "assignee": "Easeham",
-      "author": "Easeham"
+      &quot;state&quot;: &quot;OPEN&quot;,
+      &quot;assignee&quot;: &quot;Easeham&quot;,
+      &quot;author&quot;: &quot;Easeham&quot;
     }
   ],
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Easeham",
-    "author": "Easeham"
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Easeham&quot;,
+    &quot;author&quot;: &quot;Easeham&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -93,10 +95,11 @@
     "Application.Setting.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "am",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/A S U S/OneDrive/Desktop/DESKTOP/Sem 3/CAT201/CAT-Group-Project/src/main/resources/com/example/groupproject",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -156,7 +159,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1705116047363</updated>
-      <workItem from="1705681648936" duration="8271000" />
+      <workItem from="1705681648936" duration="8489000" />
+      <workItem from="1705730414013" duration="558000" />
+      <workItem from="1705733412968" duration="4548000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -166,7 +171,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705682252150</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="test">
+      <option name="closed" value="true" />
+      <created>1705690522440</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1705690522442</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,9 +194,14 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/groupproject/SceneController2.java</url>
-          <line>30</line>
+          <line>33</line>
           <properties field="Slider2" class="com.example.groupproject.SceneController2" />
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/groupproject/SceneController2.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

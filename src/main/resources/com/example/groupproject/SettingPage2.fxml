@@ -2,7 +2,9 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.Glow?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
@@ -11,6 +13,30 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #0D1117;" stylesheets="@Page1.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.groupproject.SceneController2">
     <children>
+      <AnchorPane fx:id="Slider3" layoutX="510.0" layoutY="122.0" prefHeight="350.0" prefWidth="387.0" style="-fx-background-color: #0D1160; -fx-background-radius: 40;" AnchorPane.leftAnchor="510.0" AnchorPane.rightAnchor="382.40000000000003">
+         <children>
+            <TextField fx:id="pb1" layoutX="119.0" layoutY="84.0" promptText="Old Password" />
+            <PasswordField fx:id="pb2" layoutX="120.0" layoutY="138.0" promptText="New Password" />
+            <Text fill="WHITE" layoutX="119.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Old Password ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="119.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create New Password ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <PasswordField fx:id="pb3" layoutX="120.0" layoutY="187.0" promptText="Confirm Password" />
+            <Text fill="WHITE" layoutX="120.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm New Password ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Button fx:id="Submit" layoutX="120.0" layoutY="228.0" mnemonicParsing="false" stylesheets="@SettingPage2.css" text="Submit" />
+            <Button fx:id="Cancel" layoutX="189.0" layoutY="228.0" mnemonicParsing="false" text="Cancel" />
+         </children>
+      </AnchorPane>
       <ScrollPane fx:id="Slider2" layoutX="217.0" layoutY="15.0" prefHeight="720.0" prefWidth="302.0" style="-fx-background-color: #0D1117;" AnchorPane.leftAnchor="168.0" AnchorPane.rightAnchor="812.3" AnchorPane.topAnchor="0.0">
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="900.0" prefWidth="284.0" style="-fx-background-color: #0D1117;">
@@ -35,7 +61,12 @@
                         <Font name="System Bold" size="36.0" />
                      </font>
                   </Text>
-                  <Button graphicTextGap="0.0" layoutX="16.8" layoutY="299.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="236.0" style="-fx-background-color: #111823; -fx-alignment: LEFT;" styleClass="glow-button" text="Change Password" textFill="WHITE" AnchorPane.leftAnchor="16.8">
+                  <Button fx:id="ChangePassword1" graphicTextGap="0.0" layoutX="68.0" layoutY="374.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="236.0" style="-fx-background-color: #111823; -fx-alignment: LEFT;" styleClass="glow-button" text="Change Password" textFill="WHITE" AnchorPane.leftAnchor="16.8" AnchorPane.topAnchor="299.2">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="ChangePassword" graphicTextGap="0.0" layoutX="16.8" layoutY="299.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="236.0" style="-fx-background-color: #111823; -fx-alignment: LEFT;" styleClass="glow-button" text="Change Password" textFill="WHITE" AnchorPane.leftAnchor="16.8" AnchorPane.topAnchor="299.0">
                      <font>
                         <Font name="System Bold" size="24.0" />
                      </font>
