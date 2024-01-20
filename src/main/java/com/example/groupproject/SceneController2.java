@@ -2,7 +2,6 @@ package com.example.groupproject;
 
 import javafx.animation.TranslateTransition;
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -10,12 +9,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.BackgroundFill;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.util.Duration;
-
-import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -39,21 +34,31 @@ public class SceneController2 implements Initializable {
     private AnchorPane Slider3;
     @FXML
     private Button ChangePassword;
-    @FXML
-    private Button ChangePassword1;
 
+    @FXML
+    private AnchorPane IntergrationAP;
+    @FXML
+    private Button IntergrationButton;
+
+    @FXML
+    private AnchorPane ProfileAP;
+
+    @FXML
+    private Button ProfileButton;
 
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
-        Exit.setOnMouseClicked(event -> {
-            System.exit(0);
-        });
+        Exit.setOnMouseClicked(event -> System.exit(0));
 
         Slider2.setTranslateX(-302);
 
         Setting2.setOnMouseClicked(Event -> {
+            Slider3.setVisible(false);
+            ProfileAP.setVisible(false);
+            IntergrationAP.setVisible(false);
+
             TranslateTransition slide = new TranslateTransition();
             slide.setDuration(Duration.seconds(0.4));
             slide.setNode(Slider2);
@@ -70,6 +75,10 @@ public class SceneController2 implements Initializable {
         });
 
         SettingBack2.setOnMouseClicked(Event -> {
+            Slider3.setVisible(false);
+            ProfileAP.setVisible(false);
+            IntergrationAP.setVisible(false);
+
             TranslateTransition slide = new TranslateTransition();
             slide.setDuration(Duration.seconds(0.4));
             slide.setNode(Slider2);
@@ -88,6 +97,9 @@ public class SceneController2 implements Initializable {
         Slider3.setTranslateX(-1000);
 
         ChangePassword.setOnMouseClicked(Event -> {
+            Slider3.setVisible(true);
+            ProfileAP.setVisible(false);
+            IntergrationAP.setVisible(false);
             TranslateTransition slide = new TranslateTransition();
             slide.setDuration(Duration.seconds(0.6));
             slide.setNode(Slider3);
@@ -97,31 +109,41 @@ public class SceneController2 implements Initializable {
 
             Slider3.setTranslateX(-1000);
 
-            slide.setOnFinished((ActionEvent e)-> {
-                ChangePassword.setVisible(false);
-                ChangePassword1.setVisible(true);
-            });
         });
 
-        ChangePassword1.setOnMouseClicked(Event -> {
+        ProfileButton.setOnMouseClicked(Event ->{
+            ProfileAP.setVisible(true);
+            IntergrationAP.setVisible(false);
+            Slider3.setVisible(false);
+
             TranslateTransition slide = new TranslateTransition();
             slide.setDuration(Duration.seconds(0.6));
-            slide.setNode(Slider3);
+            slide.setNode(ProfileAP);
 
-            slide.setToX(-1000);
+            slide.setToX(0);
             slide.play();
 
-            Slider3.setTranslateX(0);
+            ProfileAP.setTranslateX(-1000);
+        });
 
-            slide.setOnFinished((ActionEvent e)-> {
-                ChangePassword.setVisible(true);
-                ChangePassword1.setVisible(false);
-            });
+        IntergrationButton.setOnMouseClicked(Event ->{
+            ProfileAP.setVisible(false);
+            IntergrationAP.setVisible(true);
+            Slider3.setVisible(false);
+
+            TranslateTransition slide = new TranslateTransition();
+            slide.setDuration(Duration.seconds(0.6));
+            slide.setNode(IntergrationAP);
+
+            slide.setToX(0);
+            slide.play();
+
+            IntergrationAP.setTranslateX(-1000);
         });
 
 
 
-    };
+    }
 
     public void switchToDashboard() throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("Page1.fxml"));
@@ -134,6 +156,6 @@ public class SceneController2 implements Initializable {
 
 
 
-    
+
 
 }

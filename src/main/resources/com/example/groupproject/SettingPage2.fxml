@@ -13,7 +13,35 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #0D1117;" stylesheets="@Page1.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.groupproject.SceneController2">
     <children>
-      <AnchorPane fx:id="Slider3" layoutX="510.0" layoutY="122.0" prefHeight="350.0" prefWidth="387.0" style="-fx-background-color: #0D1160; -fx-background-radius: 40;" AnchorPane.leftAnchor="510.0" AnchorPane.rightAnchor="382.40000000000003">
+      <AnchorPane fx:id="ProfileAP" layoutX="517.0" layoutY="66.0" prefHeight="590.0" prefWidth="728.0" style="-fx-background-color: #0D1160; -fx-background-radius: 40;" visible="false" AnchorPane.leftAnchor="507.0" AnchorPane.topAnchor="56.0">
+         <children>
+            <Text fill="WHITE" layoutX="35.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="35.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Basic Information">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="IntergrationAP" layoutX="507.0" layoutY="56.0" prefHeight="590.0" prefWidth="728.0" style="-fx-background-color: #0D1160; -fx-background-radius: 40;" visible="false" AnchorPane.leftAnchor="507.0" AnchorPane.topAnchor="56.0">
+         <children>
+            <Text fill="WHITE" layoutX="35.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Intergration">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="35.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="...">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Slider3" layoutX="507.0" layoutY="142.0" prefHeight="350.0" prefWidth="387.0" style="-fx-background-color: #0D1160; -fx-background-radius: 40;" visible="false">
          <children>
             <TextField fx:id="pb1" layoutX="119.0" layoutY="84.0" promptText="Old Password" />
             <PasswordField fx:id="pb2" layoutX="120.0" layoutY="138.0" promptText="New Password" />
@@ -33,7 +61,7 @@
                   <Font size="16.0" />
                </font>
             </Text>
-            <Button fx:id="Submit" layoutX="120.0" layoutY="228.0" mnemonicParsing="false" stylesheets="@SettingPage2.css" text="Submit" />
+            <Button fx:id="Submit" layoutX="120.0" layoutY="228.0" mnemonicParsing="false" styleClass="glow-button" text="Submit" />
             <Button fx:id="Cancel" layoutX="189.0" layoutY="228.0" mnemonicParsing="false" text="Cancel" />
          </children>
       </AnchorPane>
@@ -46,12 +74,12 @@
                         <Font name="System Bold" size="36.0" />
                      </font>
                   </Text>
-                  <Button graphicTextGap="0.0" layoutX="17.0" layoutY="83.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="236.0" style="-fx-background-color: #111823; -fx-alignment: LEFT;" styleClass="glow-button" text="Profile" textFill="WHITE" AnchorPane.leftAnchor="17.0">
+                  <Button fx:id="ProfileButton" graphicTextGap="0.0" layoutX="17.0" layoutY="83.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="236.0" style="-fx-background-color: #111823; -fx-alignment: LEFT;" styleClass="glow-button" text="Profile" textFill="WHITE" AnchorPane.leftAnchor="17.0">
                      <font>
                         <Font name="System Bold" size="24.0" />
                      </font>
                   </Button>
-                  <Button graphicTextGap="0.0" layoutX="16.8" layoutY="152.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="236.0" style="-fx-background-color: #111823; -fx-alignment: LEFT;" styleClass="glow-button" text="Intergration" textFill="WHITE" AnchorPane.leftAnchor="16.8">
+                  <Button fx:id="IntergrationButton" graphicTextGap="0.0" layoutX="16.8" layoutY="152.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="236.0" style="-fx-background-color: #111823; -fx-alignment: LEFT;" styleClass="glow-button" text="Intergration" textFill="WHITE" AnchorPane.leftAnchor="16.8">
                      <font>
                         <Font name="System Bold" size="24.0" />
                      </font>
@@ -61,12 +89,7 @@
                         <Font name="System Bold" size="36.0" />
                      </font>
                   </Text>
-                  <Button fx:id="ChangePassword1" graphicTextGap="0.0" layoutX="68.0" layoutY="374.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="236.0" style="-fx-background-color: #111823; -fx-alignment: LEFT;" styleClass="glow-button" text="Change Password" textFill="WHITE" AnchorPane.leftAnchor="16.8" AnchorPane.topAnchor="299.2">
-                     <font>
-                        <Font name="System Bold" size="24.0" />
-                     </font>
-                  </Button>
-                  <Button fx:id="ChangePassword" graphicTextGap="0.0" layoutX="16.8" layoutY="299.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="236.0" style="-fx-background-color: #111823; -fx-alignment: LEFT;" styleClass="glow-button" text="Change Password" textFill="WHITE" AnchorPane.leftAnchor="16.8" AnchorPane.topAnchor="299.0">
+                  <Button fx:id="ChangePassword" graphicTextGap="0.0" layoutX="68.0" layoutY="374.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="236.0" style="-fx-background-color: #111823; -fx-alignment: LEFT;" styleClass="glow-button" text="Change Password" textFill="WHITE" AnchorPane.leftAnchor="16.8" AnchorPane.topAnchor="299.2">
                      <font>
                         <Font name="System Bold" size="24.0" />
                      </font>

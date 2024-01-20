@@ -7,7 +7,6 @@
     <list default="true" id="bbb3fdcb-54c2-4310-b0af-c6c1a0d3a92a" name="Changes" comment="test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/groupproject/SceneController2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/groupproject/SceneController2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/groupproject/Page1.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/groupproject/Page1.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/groupproject/SettingPage2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/groupproject/SettingPage2.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -161,7 +160,7 @@
       <updated>1705116047363</updated>
       <workItem from="1705681648936" duration="8489000" />
       <workItem from="1705730414013" duration="558000" />
-      <workItem from="1705733412968" duration="4548000" />
+      <workItem from="1705733412968" duration="7692000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -179,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705690522442</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="test">
+      <option name="closed" value="true" />
+      <created>1705738057265</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705738057265</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,23 +195,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
     <option name="LAST_COMMIT_MESSAGE" value="test" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/groupproject/SceneController2.java</url>
-          <line>33</line>
-          <properties field="Slider2" class="com.example.groupproject.SceneController2" />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/groupproject/SceneController2.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
