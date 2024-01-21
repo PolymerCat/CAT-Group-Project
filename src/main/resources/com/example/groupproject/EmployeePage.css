@@ -1,0 +1,37 @@
+/* styles.css */
+
+.glow-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #ff4d4d, #ff3333);
+    -fx-effect: dropshadow(gaussian, #1caab4, 10, 0, 0, 0);
+}
+.inputText{
+    -fx-text-fill: #E9E9E9;
+}
+
+.glow-logout:hover {
+    -fx-background-color: linear-gradient(to bottom, #FA5B5B, #ff3333);
+       -fx-effect: dropshadow(gaussian, #FA5B5B, 10, 0, 0, 0);
+}
+.hover-read-report{
+        -fx-background-color: #1CAAB4;
+}
+.hover-read-report:hover {
+        -fx-background-color: #24CDD9;
+        -fx-effect: dropshadow(gaussian, #24CDD9, 10, 0, 0, 0);
+}
+
+.hover-accept{
+        -fx-background-color: #1CDA7F;
+}
+.hover-accept:hover {
+        -fx-background-color: #20FB92;
+        -fx-effect: dropshadow(gaussian, #20FB92, 10, 0, 0, 0);
+}
+
+.hover-decline{
+        -fx-background-color: #FA5B5B;
+}
+.hover-decline:hover{
+        -fx-background-color: #FF3838;
+        -fx-effect: dropshadow(gaussian, #FF3838, 10, 0, 0, 0);
+}

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #0D1117;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.groupproject.ReportController">
+   <children>
+      <Pane layoutX="243.0" layoutY="28.0" prefHeight="674.0" prefWidth="1014.0" style="-fx-background-color: #111823;">
+         <children>
+            <Text fill="WHITE" layoutX="87.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Temperature : ">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Text fill="#fa5b5b" layoutX="348.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="37°C">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="87.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blood Pressure : ">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="90.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Feeling :   ">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="87.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Medical Leave : ">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="90.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Overall Health :">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Text fill="#e7eb1f" layoutX="131.0" layoutY="469.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;I fell like I am going to have a fever. My body feels hot and I'm not feeling well&quot;" wrappingWidth="786.1770935058594">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Text>
+            <Text fill="#fa5b5b" layoutX="255.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unwell" wrappingWidth="107.384765625">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Text fill="#1caab4" layoutX="364.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="120/80 mm Hg">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Text fill="#e7eb1f" layoutX="354.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Requested">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <ImageView fitHeight="247.0" fitWidth="200.0" layoutX="29.0" layoutY="28.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../media/izham.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="37.0" layoutY="302.0" prefHeight="215.0" prefWidth="198.0" spacing="15.0">
+         <children>
+            <Text fill="#1caab4" strokeType="OUTSIDE" strokeWidth="0.0" text="Muhammad Izham" wrappingWidth="191.4700469970703">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text fill="#1caab4" strokeType="OUTSIDE" strokeWidth="0.0" text="Male" wrappingWidth="192.125">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text fill="#1caab4" strokeType="OUTSIDE" strokeWidth="0.0" text="21 Years old" wrappingWidth="193.5859375">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <Button layoutX="42.0" layoutY="655.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="81.0" style="-fx-background-color: #FA5B5B;" text="Back" onAction="#onClick">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

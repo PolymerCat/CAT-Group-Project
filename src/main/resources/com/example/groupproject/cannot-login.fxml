@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.groupproject.CannotLoginController">
    <children>
       <VBox prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0D1117;">
          <children>
@@ -33,7 +33,7 @@
                   <Insets left="150.0" top="10.0" />
                </VBox.margin>
             </Label>
-            <Button contentDisplay="CENTER" mnemonicParsing="false" style="-fx-background-color: #1CAAB4;" text="Return" textAlignment="CENTER">
+            <Button contentDisplay="CENTER" mnemonicParsing="false" style="-fx-background-color: #1CAAB4;" text="Return" textAlignment="CENTER" onAction="#onClick">
                <VBox.margin>
                   <Insets left="270.0" />
                </VBox.margin>

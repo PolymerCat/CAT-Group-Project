@@ -5,12 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbb3fdcb-54c2-4310-b0af-c6c1a0d3a92a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/groupproject/Login.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/groupproject/cannot-login.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/media/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/groupproject/AudioPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/groupproject/CannotLoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/groupproject/EmployeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/groupproject/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/groupproject/ReportController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/groupproject/Settings2Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/groupproject/SettingsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/groupproject/SystemTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/groupproject/Employee.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/groupproject/EmployeePage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/groupproject/ReportCard.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/groupproject/employee-dashboard.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/groupproject/health-update.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/groupproject/settings.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/groupproject/settings2.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/media/9am-in-calabasas.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/media/DSAII.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/media/aqif.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/media/backClick.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/media/click.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/media/click2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/media/danish.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/media/graph.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/media/izham.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/media/sowan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/media/yasho.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/groupproject/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/groupproject/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/groupproject/MyApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/groupproject/MyApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/groupproject/Page1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/groupproject/Page1Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/groupproject/SceneManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/groupproject/SceneManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/groupproject/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/groupproject/Login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/groupproject/Page1.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/groupproject/Page1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/groupproject/Page1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/groupproject/Page1.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/groupproject/cannot-login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/groupproject/cannot-login.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +50,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -49,26 +79,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Aqif/Desktop/CAT Project/Group Project/src/main/resources/media&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Aqif/Desktop/CAT Project/Group Project/src/main/resources/media",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Aqif\Desktop\CAT Project\Group Project\src\main\resources\media" />
+      <recent name="C:\Users\Aqif\Desktop\CAT Project\Group Project\src\main\resources\com\example\groupproject" />
       <recent name="C:\Users\Aqif\Desktop\CAT Project\Group Project\src\main\resources" />
       <recent name="C:\Users\Aqif\Desktop\CAT Project\Group Project\src\main\resources\Libraries\Apache POI Binaries" />
       <recent name="C:\Users\Aqif\Desktop\CAT Project\Group Project\src\main\resources\Libraries" />
-      <recent name="C:\Users\Aqif\Desktop\CAT Project\Group Project\src\main\resources\com\example\groupproject" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
