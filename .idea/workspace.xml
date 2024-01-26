@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbb3fdcb-54c2-4310-b0af-c6c1a0d3a92a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/groupproject/SceneController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="bbb3fdcb-54c2-4310-b0af-c6c1a0d3a92a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +47,7 @@
     "Application.MyApp.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "WebServerToolWindowFactoryState": "false",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/A S U S/OneDrive/Desktop/DESKTOP/Sem 3/CAT201/CAT-Group-Project/src/main/java/com/example/groupproject",
@@ -101,6 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1705116047363</updated>
       <workItem from="1705681648936" duration="475000" />
+      <workItem from="1706279150109" duration="867000" />
     </task>
     <servers />
   </component>
