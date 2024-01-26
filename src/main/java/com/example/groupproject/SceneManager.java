@@ -29,8 +29,18 @@ public class SceneManager {
             // Pass the SceneManager to the controller
             if (loader.getController() instanceof Page1Controller) {
                 ((Page1Controller) loader.getController()).setSceneManager(this);
-            } else if (loader.getController() instanceof HelloController) {
-                ((HelloController) loader.getController()).setSceneManager(this);
+            } else if (loader.getController() instanceof EmployeeController) {
+                ((EmployeeController) loader.getController()).setSceneManager(this);
+            } else if (loader.getController() instanceof LoginController) {
+                ((LoginController) loader.getController()).setSceneManager(this);
+            } else if (loader.getController() instanceof CannotLoginController) {
+                ((CannotLoginController) loader.getController()).setSceneManager(this);
+            } else if (loader.getController() instanceof SettingsController) {
+                ((SettingsController) loader.getController()).setSceneManager(this);
+            } else if (loader.getController() instanceof Settings2Controller) {
+                ((Settings2Controller) loader.getController()).setSceneManager(this);
+            } else if (loader.getController() instanceof ReportController) {
+                ((ReportController) loader.getController()).setSceneManager(this);
             }
 
             Scene scene = new Scene(root);

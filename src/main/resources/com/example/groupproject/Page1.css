@@ -4,6 +4,10 @@
     -fx-background-color: linear-gradient(to bottom, #ff4d4d, #ff3333);
     -fx-effect: dropshadow(gaussian, #1caab4, 10, 0, 0, 0);
 }
+.glow-logout:hover {
+    -fx-background-color: linear-gradient(to bottom, #FA5B5B, #ff3333);
+       -fx-effect: dropshadow(gaussian, #FA5B5B, 10, 0, 0, 0);
+}
 .hover-read-report{
         -fx-background-color: #1CAAB4;
 }

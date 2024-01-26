@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #0D1117;" stylesheets="@Page1.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.groupproject.SettingsController">
+    <children>
+        <AnchorPane fx:id="ProfileAP" layoutX="517.0" layoutY="66.0" prefHeight="590.0" prefWidth="728.0" style="-fx-background-color: #0D1160; -fx-background-radius: 40;" visible="false" AnchorPane.leftAnchor="507.0" AnchorPane.topAnchor="56.0">
+            <children>
+                <Text fill="WHITE" layoutX="35.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile">
+                    <font>
+                        <Font name="System Bold" size="30.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="35.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Basic Information">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="IntergrationAP" layoutX="507.0" layoutY="56.0" prefHeight="590.0" prefWidth="728.0" style="-fx-background-color: #0D1160; -fx-background-radius: 40;" visible="false" AnchorPane.leftAnchor="507.0" AnchorPane.topAnchor="56.0">
+            <children>
+                <Text fill="WHITE" layoutX="35.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Intergration">
+                    <font>
+                        <Font name="System Bold" size="30.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="35.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="...">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="Slider3" layoutX="507.0" layoutY="142.0" prefHeight="350.0" prefWidth="387.0" style="-fx-background-color: #0D1160; -fx-background-radius: 40;" visible="false">
+            <children>
+                <TextField fx:id="pb1" layoutX="119.0" layoutY="84.0" promptText="Old Password" />
+                <PasswordField fx:id="pb2" layoutX="120.0" layoutY="138.0" promptText="New Password" />
+                <Text fill="WHITE" layoutX="119.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Old Password ">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="119.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create New Password ">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Text>
+                <PasswordField fx:id="pb3" layoutX="120.0" layoutY="187.0" promptText="Confirm Password" />
+                <Text fill="WHITE" layoutX="120.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm New Password ">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Text>
+                <Button fx:id="Submit" layoutX="120.0" layoutY="228.0" mnemonicParsing="false" styleClass="glow-button" text="Submit" />
+                <Button fx:id="Cancel" layoutX="189.0" layoutY="228.0" mnemonicParsing="false" text="Cancel" />
+            </children>
+        </AnchorPane>
+        <ScrollPane fx:id="Slider2" layoutX="217.0" layoutY="15.0" prefHeight="720.0" prefWidth="302.0" style="-fx-background-color: #0D1117;" AnchorPane.leftAnchor="168.0" AnchorPane.rightAnchor="812.3" AnchorPane.topAnchor="0.0">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="900.0" prefWidth="284.0" style="-fx-background-color: #0D1117;">
+                    <children>
+                        <Text fill="WHITE" layoutX="11.0" layoutY="70.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Setting" wrappingWidth="217.33660888671875" AnchorPane.leftAnchor="11.0">
+                            <font>
+                                <Font name="System Bold" size="36.0" />
+                            </font>
+                        </Text>
+                        <Button fx:id="ProfileButton" graphicTextGap="0.0" layoutX="17.0" layoutY="83.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="236.0" style="-fx-background-color: #111823; -fx-alignment: LEFT;" styleClass="glow-button" text="Profile" textFill="WHITE" AnchorPane.leftAnchor="17.0">
+                            <font>
+                                <Font name="System Bold" size="24.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="IntergrationButton" graphicTextGap="0.0" layoutX="16.8" layoutY="152.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="236.0" style="-fx-background-color: #111823; -fx-alignment: LEFT;" styleClass="glow-button" text="Intergration" textFill="WHITE" AnchorPane.leftAnchor="16.8">
+                            <font>
+                                <Font name="System Bold" size="24.0" />
+                            </font>
+                        </Button>
+                        <Text fill="WHITE" layoutX="12.0" layoutY="291.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Setting" wrappingWidth="217.33660888671875" AnchorPane.leftAnchor="12.0">
+                            <font>
+                                <Font name="System Bold" size="36.0" />
+                            </font>
+                        </Text>
+                        <Button fx:id="ChangePassword" graphicTextGap="0.0" layoutX="68.0" layoutY="374.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="236.0" style="-fx-background-color: #111823; -fx-alignment: LEFT;" styleClass="glow-button" text="Change Password" textFill="WHITE" AnchorPane.leftAnchor="16.8" AnchorPane.topAnchor="299.2">
+                            <font>
+                                <Font name="System Bold" size="24.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="Exit" layoutX="95.0" layoutY="438.0" mnemonicParsing="false" styleClass="glow-button" text="Exit" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+        <VBox prefHeight="720.0" prefWidth="168.0" spacing="50.0" style="-fx-background-color: #111823;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1112.0">
+            <children>
+                <Button fx:id="GoToDashboard" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#backClick" prefHeight="30.0" prefWidth="173.0" style="-fx-background-color: #111823;" styleClass="glow-button" text="Dashboard" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+                <Button alignment="TOP_CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="173.0" style="-fx-background-color: #111823;" styleClass="glow-button">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+                <Button fx:id="SettingBack2" alignment="TOP_CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="173.0" style="-fx-background-color: #111823;" styleClass="glow-button" text="Account Setting" textFill="#1caab4">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <effect>
+                        <Glow />
+                    </effect>
+                </Button>
+            </children>
+            <padding>
+                <Insets top="280.0" />
+            </padding>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </VBox>
+        <Button fx:id="Setting2" alignment="TOP_CENTER" layoutX="647.0" layoutY="413.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="173.0" style="-fx-background-color: #111823;" styleClass="glow-button" text="Account Setting" textFill="#1caab4" AnchorPane.leftAnchor="-5.0" AnchorPane.topAnchor="442.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+            <effect>
+                <Glow />
+            </effect>
+        </Button>
+    </children>
+</AnchorPane>
