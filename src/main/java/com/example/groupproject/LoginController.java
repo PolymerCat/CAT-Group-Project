@@ -19,7 +19,7 @@ public class LoginController {
     public void setSceneManager(SceneManager sceneManager)
     {
         this.sceneManager = sceneManager;
-        bgPlayer.play("src/main/resources/media/9am-in-calabasas.wav");
+//        bgPlayer.play("src/main/resources/media/9am-in-calabasas.wav");
     }
     @FXML
     protected void onLoginButtonClick(){
